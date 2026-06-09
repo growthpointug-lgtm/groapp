@@ -2,8 +2,8 @@
 import { create } from "apisauce";
 //  Do not change anything above this line if you're not sure about what you're doing.
 
-const domain = "https://www.radiustheme.net";
-const apiKey = "95-6cb7-42a0-aa73-94b8";
+const domain = "https://joblinksads.shop";
+const apiKey = "27899cf7-084b-46f6-a30e-4d73187cf86e";
 
 const apiRequestTimeOut = 60000; // 60 secs
 

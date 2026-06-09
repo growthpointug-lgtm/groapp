@@ -1,12 +1,19 @@
 {
   "expo": {
-    "name": "Classima",
+    "name": "GROAPP",
     "slug": "classima",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "plugins": [
+            [
+        "expo-tracking-transparency",
+        {
+          "userTrackingPermission": "Groapp wants to track you and collect IDFA to deliver personalized ads to you."
+        }
+      ],
+      
       [
         "expo-build-properties",
         {
@@ -46,7 +53,15 @@
         }
       ],
       "expo-localization",
-      "expo-font"
+      "expo-font",
+      [
+        "react-native-google-mobile-ads",
+        {
+          "androidAppId": "ca-app-pub-2905539728087037~4353518449",
+          "iosAppId": "ca-app-pub-2905539728087037~2505009872",
+          "userTrackingUsageDescription": "Classima wants to track you and collect IDFA to deliver personalized ads to you."
+        }
+      ]
     ],
     "splash": {
       "image": "./assets/splash.png",
@@ -62,24 +77,28 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "bitcode": "Debug",
       "usesAppleSignIn": true,
       "supportsTablet": true,
-      "bundleIdentifier": "com.classima",
+      "bundleIdentifier": "com.growthpoint",
       "buildNumber": "1",
       "usesIcloudStorage": true,
       "infoPlist": {
-        "NSCameraUsageDescription": "Classima uses the camera to capture and upload user profile image and Listing Image to the server.",
-        "NSPhotoLibraryUsageDescription": "Classima needs access to the photo library to select and upload user profile image and Listing Image to the server.",
-        "NSPhotoLibraryAddUsageDescription": "Classima needs access to the photo library to select and upload user profile image and Listing Image to the server.",
-        "NSLocationWhenInUseUsageDescription": "Classima uses device location on listing information, Listing search Data and User information.",
-        "NSLocationAlwaysAndWhenInUseUsageDescription": "Classima uses device location on listing information, Listing search Data and User information.",
-        "NSLocationAlwaysUsageDescription": "Classima uses device location on listing information, Listing search Data and User information.",
-        "NSMicrophoneUsageDescription": "Classima uses your microphone while taking video of your product for uploading in listing information.",
+        "NSCameraUsageDescription": "Groapp uses the camera to capture and upload user profile image and Listing Image to the server.",
+        "NSPhotoLibraryUsageDescription": "Groapp needs access to the photo library to select and upload user profile image and Listing Image to the server.",
+        "NSPhotoLibraryAddUsageDescription": "Groapp needs access to the photo library to select and upload user profile image and Listing Image to the server.",
+        "NSLocationWhenInUseUsageDescription": "Groapp uses device location on listing information, Listing search Data and User information.",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "Groapp uses device location on listing information, Listing search Data and User information.",
+        "NSLocationAlwaysUsageDescription": "Groapp uses device location on listing information, Listing search Data and User information.",
+        "NSMicrophoneUsageDescription": "Groapp uses your microphone while taking video of your product for uploading in listing information.",
         "CFBundleAllowMixedLocalizations": true,
-        "UIBackgroundModes": ["remote-notification"]
+        "UIBackgroundModes": [
+          "remote-notification"
+        ]
       },
       "config": {
         "googleMapsApiKey": "j87tj8y787h6-jh7gbi8678",
@@ -87,7 +106,8 @@
       }
     },
     "android": {
-      "package": "com.classima",
+      "googleServicesFile": "./google-services.json",
+      "package": "com.growthpoint",
       "config": {
         "googleMaps": {
           "apiKey": "j87tj8y787h6-jh7gbi8678"
@@ -95,7 +115,7 @@
       },
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#fff"
+        "backgroundColor": "#ffffff"
       },
       "permissions": [
         "CAMERA",
@@ -110,14 +130,22 @@
         "ACCESS_FINE_LOCATION",
         "RECEIVE_BOOT_COMPLETED",
         "android.permission.INTERNET",
-        "POST_NOTIFICATIONS"
+        "POST_NOTIFICATIONS",
+        "com.google.android.gms.permission.AD_ID"
       ],
-      "blockedPermissions": ["READ_CONTACTS"],
+      "blockedPermissions": [
+        "READ_CONTACTS"
+      ],
       "versionCode": 1
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
-    "scheme": "classima"
+    "scheme": "classima",
+    "extra": {
+      "eas": {
+        "projectId": "c18dfbfe-ab16-48ea-9821-f08244ad07ac"
+      }
+    }
   }
 }

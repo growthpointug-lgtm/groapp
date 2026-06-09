@@ -11,7 +11,7 @@ import HomeNavigator from "./navigation/HomeNavigator";
 import { StateProvider } from "./StateProvider";
 import reducer, { initialState } from "./reducer";
 
-// import mobileAds from "react-native-google-mobile-ads";
+ import mobileAds from "react-native-google-mobile-ads";
 // import { Settings } from "react-native-fbsdk-next";
 
 Notifications.setNotificationHandler({

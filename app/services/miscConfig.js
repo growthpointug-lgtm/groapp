@@ -1,5 +1,5 @@
 export const miscConfig = {
-  enablePushNotification: false,
+  enablePushNotification: true,
   enableHomeButtonRefreshAction: true,
   enableAppSharing: false,
   appSharingLinks: {

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "703467800495",
+    "project_id": "growthpoint-bf393",
+    "storage_bucket": "growthpoint-bf393.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:703467800495:android:5e197445a092b42de5915a",
+        "android_client_info": {
+          "package_name": "com.growthpoint"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAIqgMZ8o7RKrgnsp4b-Il-IPZYirwlbRw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,8 +1,8 @@
-// import {
-//   BannerAd,
-//   BannerAdSize,
-//   TestIds,
-// } from "react-native-google-mobile-ads";
+ import {
+   BannerAd,
+   BannerAdSize,
+   TestIds,
+ } from "react-native-google-mobile-ads";
 import React from "react";
 import { admobConfig } from "../app/services/adMobConfig";
 import { useStateValue } from "../StateProvider";

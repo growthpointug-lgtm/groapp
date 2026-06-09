@@ -1,7 +1,7 @@
-// import {
-//   requestTrackingPermissionsAsync,
-//   getTrackingPermissionsAsync,
-// } from "expo-tracking-transparency";
+ import {
+   requestTrackingPermissionsAsync,
+   getTrackingPermissionsAsync,
+ } from "expo-tracking-transparency";
 import React, { useEffect, useState } from "react";
 import { View, Image, Platform } from "react-native";
 import { createStackNavigator } from "@react-navigation/stack";

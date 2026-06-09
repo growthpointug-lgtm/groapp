@@ -1,8 +1,8 @@
 export const admobConfig = {
-  admobEnabled: false,
+  admobEnabled: truee,
   admobBannerId: {
-    android: "ca-app-pub-876875876/0980",
-    iOS: "ca-app-pub-9878767687/0980",
+    android: "ca-app-pub-2905539728087037/7655154969",
+    iOS: "ca-app-pub-2905539728087037/7158570751",
   },
 
   listAdType: "largeBanner",
